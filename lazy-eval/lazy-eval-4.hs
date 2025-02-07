@@ -12,7 +12,7 @@ checkString str
             b = ord (str !! 1)
             c = ord (str !! 2)
             lastFive = drop (length str - 5) str
-        in  a == b && c == a + 1 && encodeBase64 lastFive == "X2ZVTk4="
+        in  a == b && c == a + 1 && encodeBase64 lastFive == "dGVzdA=="
 
 -- Function to encode a string to Base64
 encodeBase64 :: String -> String
